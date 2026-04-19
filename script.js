@@ -1,9 +1,10 @@
 let count = 0;
+let saveEl = document.getElementById('save-el')
 document.getElementById('peopleCount').style.fontSize="100px";
       
 function countUp() {
   const show = document.getElementById('peopleCount');
-  count = count + 1;
+  count += 1;
   show.innerText = count;
   show.style.color = "black"
 };
@@ -17,7 +18,11 @@ function countDown() {
   } else {
     show.style.color = "red";
     show.innerText = "Error";
-    
   };
 };
-console.log(count)
+
+function save() {
+  let previousEntries = (count + " - ");
+  saveEl.textContent += previousEntries;
+  console.log(previousEntries);
+}
