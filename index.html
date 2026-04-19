@@ -9,6 +9,25 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+        font-family: 'Segoe UI';
+      }
+      
+      .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+      }
+      
+      .buttons button{
+        height: 80px;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
       }
     </style>
   </head>
@@ -17,10 +36,12 @@
       <h1>People Entered:</h1>
       <h1 id="peopleCount">0</h1>
       <div class="buttons">
-        <button onclick="countUp()" id="countUp">Up</button>
-        <button onclick="countDown()" id="countDown">Down</button>
+        <button onclick="countUp()" id="countUp" style="background-color:
+        green;">Increase</button>
+        <button onclick="countDown()" id="countDown" style="background-color:
+        red;">Decrease</button>
       </div>
     </div>
-   <script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

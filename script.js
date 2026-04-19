@@ -2,18 +2,22 @@ let count = 0;
 document.getElementById('peopleCount').style.fontSize="100px";
       
 function countUp() {
-  const up = document.getElementById('peopleCount');
+  const show = document.getElementById('peopleCount');
   count = count + 1;
-  up.innerText = count;
+  show.innerText = count;
+  show.style.color = "black"
 };
       
 function countDown() {
-  const low = document.getElementById('peopleCount');
-  count = count - 1;
-  low.innerText = count;
-  if (count < 0) {
-    low.innerText = "Error";
-    low.style.color = "red";
+  const show = document.getElementById('peopleCount');
+  if (count > 0) {
+    count = count - 1;
+    show.innerText = count;
+    show.style.color = "black";
+  } else {
+    show.style.color = "red";
+    show.innerText = "Error";
+    
   };
 };
 console.log(count)
