@@ -1,0 +1,26 @@
+<!DOCTYOE html>
+<html>
+  <head>
+    <title>People Counter</title>
+    <style>
+      .everything{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="everything">
+      <h1>People Entered:</h1>
+      <h1 id="peopleCount">0</h1>
+      <div class="buttons">
+        <button onclick="countUp()" id="countUp">Up</button>
+        <button onclick="countDown()" id="countDown">Down</button>
+      </div>
+    </div>
+   <script src="script.js"></script>
+  </body>
+</html>
